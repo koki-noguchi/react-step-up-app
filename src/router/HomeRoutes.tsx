@@ -1,7 +1,7 @@
-import { Home } from "../components/Home";
-import { Settings } from "../components/Settings";
-import { UserManagement } from "../components/UserManagement";
-import { Page404 } from "../components/Page404";
+import { Home } from "../components/pages/Home";
+import { Settings } from "../components/pages/Settings";
+import { UserManagement } from "../components/pages/UserManagement";
+import { Page404 } from "../components/pages/Page404";
 
 export const HomeRoutes = [
   {
