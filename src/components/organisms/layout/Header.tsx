@@ -14,7 +14,7 @@ export const Header: VFC = memo(() => {
     () => history.push("/home/user_management"),
     []
   );
-  const onClickSetting = useCallback(() => history.push("/home/setting"), []);
+  const onClickSetting = useCallback(() => history.push("/home/settings"), []);
 
   return (
     <>
@@ -50,7 +50,13 @@ export const Header: VFC = memo(() => {
         </Flex>
         <MenuIconButton onOpen={onOpen} />
       </Flex>
-      <MenuDrawers onClose={onClose} isOpen={isOpen} />
+      <MenuDrawers
+        onClickHome={onClickHome}
+        onClickSetting={onClickSetting}
+        onClickUserManagement={onClickUserManagement}
+        onClose={onClose}
+        isOpen={isOpen}
+      />
     </>
   );
 });
